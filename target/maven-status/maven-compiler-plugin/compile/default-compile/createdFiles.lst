@@ -1,0 +1,5 @@
+com\mycompany\empresaropa\SecondaryController.class
+com\mycompany\empresaropa\entities\Marca.class
+module-info.class
+com\mycompany\empresaropa\entities\Prenda.class
+com\mycompany\empresaropa\App.class

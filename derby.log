@@ -1,0 +1,12 @@
+----------------------------------------------------------------
+Wed May 25 10:00:14 CEST 2022D001 : [0] The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585), [1] a816c00e-0180-fa3b-08a1-00000b2ebda8, [2] C:\Users\34608\Documents\NetBeansProjects\EmpresaRopa\BDEmpresaRopa, [3] jdk.internal.loader.ClassLoaders$AppClassLoader@133314b, [4] file:/C:/Users/34608/.m2/repository/org/apache/derby/derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=17.0.1+12-LTS-39
+user.dir=C:\Users\34608\Documents\NetBeansProjects\EmpresaRopa
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+C005 : [0] 
+----------------------------------------------------------------
+Wed May 25 10:00:37 CEST 2022D002 : [0] a816c00e-0180-fa3b-08a1-00000b2ebda8, [1] C:\Users\34608\Documents\NetBeansProjects\EmpresaRopa\BDEmpresaRopa, [2] jdk.internal.loader.ClassLoaders$AppClassLoader@133314b

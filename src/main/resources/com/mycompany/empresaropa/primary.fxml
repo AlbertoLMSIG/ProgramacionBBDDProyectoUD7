@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="501.0" prefWidth="658.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.empresaropa.PrimaryController">
+   <children>
+      <BorderPane prefHeight="404.0" prefWidth="618.0">
+         <top>
+            <HBox prefHeight="0.0" prefWidth="618.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionButtonNuevo" text="Nuevo" />
+                  <Button mnemonicParsing="false" onAction="#onActionEditar" text="Editar" />
+                  <Button mnemonicParsing="false" onAction="#onActionEliminar" text="Eliminar" />
+                  <TextField fx:id="textFieldBuscar" prefHeight="25.0" prefWidth="157.0">
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button mnemonicParsing="false" onAction="#onActionButtonBuscar" prefHeight="25.0" prefWidth="56.0" text="Buscar">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <CheckBox fx:id="checkBoxCoincide" mnemonicParsing="false" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tableRopa" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colMarca" prefWidth="139.0" text="Marca" />
+                <TableColumn fx:id="colPrenda" prefWidth="169.0" text="Tipo_Prenda" />
+                  <TableColumn fx:id="colColor" prefWidth="151.0" text="Color" />
+                  <TableColumn fx:id="colPrecio" prefWidth="158.0" text="Precio" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="193.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="425.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionGuardar" text="Guardar" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marca: ">
+                     <GridPane.margin>
+                        <Insets left="140.0" />
+                     </GridPane.margin></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:  " wrappingWidth="44.279296875" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="149.0" />
+                     </GridPane.margin></Text>
+                  <TextField fx:id="textM" GridPane.columnIndex="1" />
+                  <TextField fx:id="textT" prefHeight="25.0" prefWidth="356.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </bottom>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
